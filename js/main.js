@@ -147,9 +147,18 @@ function modificarEstilo(){
             setearDdlSelectEstilo(linkStyles[index+1]);
             setearRadioEstilo(linkStyles[index+1]);
         }
+        //Se puede dar el caso de que no tiene estilo asignado
+        //por lo tanto no identificó cual es el siguiente estilo
+        //consecutivo a seleccionar, por lo tanto se setea el 
+        //original como inicial. En caso de haber encontrado
+        //el correlativo, se aborta el for.
         if(bandera)
             break;        
+        else
+            linkStyles[0].disabled=false;
     }
+
+    
 }
 
 function setearDdlSelectEstilo(linkStyle){
