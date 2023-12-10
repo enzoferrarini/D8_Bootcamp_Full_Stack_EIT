@@ -1,0 +1,249 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Flavors&family=Indie+Flower&family=Poppins:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Flavors&family=Indie+Flower&family=Poppins:wght@900&family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Monoton&family=Rye&display=swap');
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    background-image: url('../img/img-retro/output-onlinepngtools.png');
+    background-repeat: repeat;
+    background-color: #e0d39e;
+    color:#585343;
+}
+
+.container {
+    margin: auto;
+    width: 50%;
+}
+
+@media (max-width: 1200px) {
+    .container {
+        margin: auto;
+        width: 70%;
+    }
+}
+
+@media (max-width: 1000px) {
+    .container {
+        margin: auto;
+        width: 90%;
+    }
+}
+
+.flex-container {
+    display: flex;    
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 30px;
+}
+
+fieldset{
+    background-color: #f6f7bd;
+    border: 2px solid #908564;
+    border-radius: 5px;
+    margin: 30px 0;   
+}
+
+#datosPersonales{
+    background-image: url('../img/img-retro/personalData.png');
+    background-repeat: no-repeat;
+    background-position-x: right;
+    background-position-y: bottom;
+    background-size: 150px;
+}
+
+#datosContacto{
+    background-image: url('../img/img-retro/contact.png');
+    background-repeat: no-repeat;
+    background-position-x: right;
+    background-position-y: bottom;
+    background-size: 150px;
+}
+
+#datosActivity{
+    background-image: url('../img/img-retro/sports.png');
+    background-repeat: no-repeat;
+    background-position-x: right;
+    background-position-y: bottom;
+    background-size: 150px;
+}
+
+#datosCondition{
+    background-image: url('../img/img-retro/agree.png');
+    background-repeat: no-repeat;
+    background-position-x: right;
+    background-position-y: center;
+    background-size: 150px;
+}
+
+input, label,select{
+    margin: 5px 0;    
+}
+
+input, select, textarea{
+    width: 100%;
+    padding: 5px 5px;
+    font-size: 16px;
+    border-radius: 3px; 
+    border: 1px solid;
+
+
+    border:none;
+    background-color: transparent;
+    border-bottom: 1px solid #59494e;
+}
+
+input{
+    text-align: left;
+}
+
+textarea{
+    resize:vertical;
+}
+
+legend{
+    border: 2px solid #ebe4c5;
+    background-color: #ebe4c4;
+    color: #655643;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.condiciones{
+    color: #585343;
+    background-color: #f6f7bd;
+    border: 2px solid #908564;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.botonera{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.botonera button{
+    background-color: #8d8260;
+    border: 1px solid #84918d;
+    border-radius: 4px;
+    padding: 10px 15px;
+    margin: 5px 5px;
+    color: #f6f7bd;
+    font-size: 1rem;
+}
+
+.botonera button:hover{
+    background-color: #f6f7bd;
+    border: 1px solid #84918d;
+    color:#8d8260;
+}
+
+.title-page{
+    /* border-bottom: 15px solid #4d6d63;
+    border-top: 15px solid #4d6d63;    
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    color: #fff; */
+    font-family: Rye;
+    font-weight: bolder;
+    font-weight: 900;
+    font-size: 3rem;
+    text-align: center;
+    margin: 40px 0;
+    background-color: #f6f7bd;
+    color: #655643;
+    border-radius: 5px;
+    border: 2px solid #908564;
+}
+
+:is(input, textarea):focus{
+    border: none;
+    outline:none !important;
+    border-bottom: 2px solid #4a4025;
+    color: #4a4025;
+}
+
+:is(input, textarea):focus::placeholder {
+    color: #4a4025;
+}
+
+fieldset:focus-within {
+    background-color: #ece5c5;
+}
+
+fieldset:focus-within > legend {
+    background-color:#908565;
+    border: 2px solid #908565;
+    color:#ece5c5;
+}
+
+.dots {
+    width: 100%;
+    border-top: 15px double #584409;
+    background-color: #ece5c5;
+}
+
+.flex-container-check
+{
+    display: flex;
+    justify-content: left;
+    flex-direction: row;
+}
+
+input[type='checkbox'],input[type="radio"] {
+    width: auto;
+}
+
+#btnAleatoriorCSS{
+    background-image: url('../img/img-retro/dices.png');
+    background-size: 30px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #fff;
+    border: 1px solid #84918d;
+    border-radius: 4px;
+    padding: 10px 15px;
+    margin: 5px 5px;
+    color:#2b3d37;
+    font-size: 1rem; 
+    width: 60px;
+}
+
+/* helper */
+.m-l5{
+    margin-left: 10px;
+}  
+
+.m-r5{
+    margin-right: 10px;
+}  
+
+.btn-pulsado, .btn-pulsado:hover {
+	text-shadow: 1px 1px rgba(0,0,0,.3);  /* Sombra del texto */
+	background:#f1f1f1 !important;   /* Fondo más oscuro que el original */
+    color: #8d8260 !important;
+	box-shadow:inset 4px 4px 4px rgba(0,0,0,.3), inset -3px -3px 3px rgba(255,255,255,.2);
+}
+
+.idSelectorEstilo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column
+}
+
+.idSelectorEstilo> select{
+    background-color: #f1f1f1;
+    width: 80%;
+    justify-content: center
+}
+
+.idSelectorEstilo> .flex-container-check{
+    background-color: #f1f1f1;
+    width: 80%;
+    justify-content: center
+}
+

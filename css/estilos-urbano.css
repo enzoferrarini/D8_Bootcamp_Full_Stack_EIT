@@ -1,0 +1,274 @@
+@import url('https://fonts.googleapis.com/css2?family=Hedvig+Letters+Sans&display=swap');
+body {
+    font-family: 'Hedvig Letters Sans', sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    background-image: url('../img/img-urbano/output-onlinepngtools (3).png');
+    background-repeat: repeat;
+    background-color: #fff;
+    color:#383838;
+    padding: 0 100px;
+}
+
+.waviy {
+    position: relative;
+  }
+.waviy span {
+    position: relative;
+    display: inline-block;
+    animation: flip 3s infinite;
+    animation-delay: calc(1s * var(--i))
+}
+    @keyframes flip {
+    0%,50% {
+        transform: rotateY(360deg) 
+    }
+}
+
+
+.container {
+    margin: auto;
+    width: 100%;
+}
+
+fieldset{
+    background-color: #fff;
+    border: 2px solid #d7d7d7;
+    border-radius: 5px;
+    margin: 5px 0;   
+    width: 47%;
+    background-image: url("https://www.transparenttextures.com/patterns/concrete-wall.png");
+}
+
+
+@media (max-width: 1200px) {
+    #idDivContainer{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+
+    fieldset{       
+        width: 100%;
+        box-sizing: border-box;
+    }
+}
+
+.flex-container {
+    display: flex;    
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 30px;
+}
+
+
+
+#datosPersonales{
+    background-image: url('../img/img-retro/personalData.png');
+    background-repeat: no-repeat;
+    background-position-x: right;
+    background-position-y: bottom;
+    background-size: 150px;
+}
+
+#datosContacto{
+    background-image: url('../img/img-retro/contact.png');
+    background-repeat: no-repeat;
+    background-position-x: right;
+    background-position-y: bottom;
+    background-size: 150px;    
+}
+
+#datosActivity{
+    background-image: url('../img/img-retro/sports.png');
+    background-repeat: no-repeat;
+    background-position-x: right;
+    background-position-y: bottom;
+    background-size: 150px;
+    width: 100%;
+}
+
+#datosCondition{
+    background-image: url('../img/img-retro/agree.png');
+    background-repeat: no-repeat;
+    background-position-x: right;
+    background-position-y: center;
+    background-size: 150px;
+} 
+
+input, label,select{
+    margin: 5px 0;    
+}
+
+input, select, textarea{
+    width: 100%;
+    padding: 5px 5px;
+    font-size: 16px;
+    border-radius: 3px; 
+    border: 1px solid;
+    border:none;
+    background-color: transparent;
+    border-bottom: 1px solid #59494e;
+}
+
+input{
+    text-align: left;
+}
+
+textarea{
+    resize:vertical;
+}
+
+legend{
+    border: 2px solid #d7d7d7;
+    background-color: #f1f1f1;
+    color: #383838;
+    padding: 5px;
+    border-radius: 5px;
+    margin: 0 auto;
+    width: 80%;
+    text-align: center;
+}
+
+.condiciones{
+    color: #383838;
+    background-color: #fff;
+    border: 2px solid #d7d7d7;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.botonera{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.botonera button{
+    background-color: #464646;
+    border: 1px solid #84918d;
+    border-radius: 4px;
+    padding: 10px 15px;
+    color: #f1f1f1;
+    font-size: 1rem;
+    margin: 5px 5px;
+}
+
+.botonera button:hover{
+    background-color: #f1f1f1;   
+    border: 1px solid #84918d;
+    color:#8d8260;
+}
+
+.title-page{   
+    font-weight: bolder;
+    font-weight: 900;
+    font-size: 3rem;
+    text-align: center;   
+    color: #383838;
+    border-radius: 5px;   
+    background-color: #fff;
+    border: 2px solid #d7d7d7;   
+    margin-top: 10px;
+    background-image: url("https://www.transparenttextures.com/patterns/concrete-wall.png");
+}
+
+:is(input, textarea):focus{
+    border: none;
+    outline:none !important;
+    border-bottom: 2px solid #4a4025;
+    color: #4a4025;
+}
+
+:is(input, textarea):focus::placeholder {
+    color: #4a4025;
+}
+
+fieldset:focus-within {
+    background-color: #f1f1f1;   
+}
+
+fieldset:focus-within > legend {
+    background-color:#3b3b3b;
+    border: 2px solid #3b3b3b;
+    color:#f1f1f1;
+}
+
+.dots {
+    width: 100%;
+    border-top: 15px double #584409;
+    background-color: #ece5c5;
+}
+
+.flex-container-check
+{
+    display: flex;
+    justify-content: left;
+    flex-direction: row;
+}
+
+input[type='checkbox'],input[type="radio"] {
+    width: auto;
+}
+
+#btnAleatoriorCSS{
+    background-image: url('../img/img-retro/dices.png');
+    background-size: 30px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #fff;
+    border: 1px solid #84918d;
+    border-radius: 4px;
+    padding: 10px 15px;
+    margin: 5px 5px;
+    color:#2b3d37;
+    font-size: 1rem; 
+    width: 60px;
+}
+
+/* helper */
+.m-l5{
+    margin-left: 10px;
+}  
+
+.m-r5{
+    margin-right: 10px;
+}  
+
+#idDivContainer > .flex-container{
+    display: none;
+}
+
+#idDivContainer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: stretch;
+}
+
+.btn-pulsado, .btn-pulsado:hover {
+	text-shadow: 1px 1px rgba(0,0,0,.3);  /* Sombra del texto */
+	background:#f1f1f1 !important;   /* Fondo más oscuro que el original */
+    color: #8d8260 !important;
+	box-shadow:inset 4px 4px 4px rgba(0,0,0,.3), inset -3px -3px 3px rgba(255,255,255,.2);
+}
+
+.idSelectorEstilo{    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column
+}
+
+.idSelectorEstilo> select{
+    background-color: #f1f1f1;
+    width: 80%;
+}
+
+.idSelectorEstilo> .flex-container-check{
+    background-color: #f1f1f1;
+    width: 80%;
+    justify-content: center
+}
+

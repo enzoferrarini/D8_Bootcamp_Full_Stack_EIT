@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafío N° 8 - FERRARINI ENZO</title>
+    <link class="estilo" rel="stylesheet" href="css/estilos.css" >
+    <link class="estilo" rel="stylesheet" href="css/estilos-urbano.css" disabled >
+    <link class="estilo" rel="stylesheet" href="css/estilos-retro.css" disabled>
+</head>
+<body>
+    <div class="botonera">
+        <button type="button" id="btnAlternarCSS">Alternar Estilos</button>
+        <button type="button" class="buttonAleatorio" id="btnAleatoriorCSS"></button>
+        <button type="button" id="btnRecordarEstilo">Recordar</button>
+    </div>
+    
+    <div class="container">
+        <div class="idSelectorEstilo">
+            <select id="idDropDownEstilo" name="idDropDownEstilo" placeholder="seleccione Estilo" >
+                <option value="none" disabled selected>Seleccione Estilo</option>
+                <option value="se">Sin Estilo</option>
+                <option value="estilos.css">Estilo Original</option>
+                <option value="estilos-retro.css">Estilo Retro</option>
+                <option value="estilos-urbano.css">Estilo Urbano</option>
+            </select>   
+            
+            <div class="flex-container-check">         
+                <input type="radio" id="idSe" class="radioEstilo" name="selEstilo" value="se">
+                <label class="m-l5 m-r5" for="idSe">Sin Estilo</label>
+                <input type="radio" id="idEo" class="radioEstilo" name="selEstilo" value="estilos.css">
+                <label class="m-l5 m-r5" for="idEo">Estilo Original</label>
+                <input type="radio" id="idEr" class="radioEstilo" name="selEstilo" value="estilos-retro.css">
+                <label class="m-l5 m-r5" for="idEr">Estilo Retro</label>
+                <input type="radio" id="idEu" class="radioEstilo" name="selEstilo" value="estilos-urbano.css">
+                <label class="m-l5 m-r5" for="idEu">Estilo Urbano</label>
+            </div>   
+             
+        </div>
+        <form action="" id="formDatos">
+            <div class="title-page waviy">
+                <span> Vení al Gym!💪</span>
+            </div>
+            <div id="idDivContainer">
+                <fieldset id="datosPersonales">
+                    <legend>🙋‍♂️ DATOS PERSONALES 👀</legend>
+                        <div class="flex-container">
+                            <label for="idName">Nombre:*</label>
+                            <input type="text" id="idName" name="idName" autocomplete="off" required >
+                            <label for="idApellido">Apellido:*</label>
+                            <input type="text" id="idApellido" name="idApellido" autocomplete="off" required >
+                            <label for="idDocumento">Documento:*</label>
+                            <input type="text" id="idDocumento" name="idDocumento" autocomplete="off" required >
+                        
+                            <label for="idNacionalidad">Nacionalidad:*</label>
+                            <select id="idNacionalidad" name="idNacionalidad" placeholder="seleccione" required >
+                                <option value="none" disabled selected>Seleccione</option>
+                                <option value="arg">Argentino/a</option>
+                                <option value="chi">Chileno/a</option>
+                                <option value="uru">Uruguayo/a</option>
+                                <option value="bras">Brasilero/a</option>
+                            </select>                
+                    
+                            <label for="idSobreVos">Contanos un poco de vos:</label>
+                            <textarea id="idSobreVos" name="idSobreVos" rows="4" >
+                            </textarea>
+                        </div>
+                    
+                        <p>Sexo:*</p>   
+                        <div class="flex-container-check">         
+                            <input type="radio" id="idFemenino" name="selSexo" value="femenino">
+                            <label class="m-l5 m-r5" for="idFemenino">femenino</label><br>
+                            <input type="radio" id="idMasculino" name="selSexo" value="masculino">
+                            <label class="m-l5 m-r5" for="idMasculino">Masculino</label><br>
+                            <input type="radio" id="idOtro" name="selSexo" value="otro">
+                            <label class="m-l5 m-r5" for="idOtro">Otro</label>
+                        </div>   
+                </fieldset>                
+                <div class="flex-container">
+                    <div class="dots"></div>
+                </div>
+                <fieldset id="datosContacto">
+                    <legend>📱 DATOS DE CONTACTO 📧</legend>
+                    <div class="flex-container">
+                        <label for="idTel">Telefono:</label>
+                        <input type="text" id="idTel" name="idTel" autocomplete="off" placeholder="Código de área y número">
+                        <label for="idMail">Dirección de Correo Electrónico:*</label>
+                        <input type="email" id="idMail" name="idMail" autocomplete="off" placeholder="Ej. mail@gmail.com">
+                    </div>
+                </fieldset>
+
+                <div class="flex-container">
+                    <div class="dots"></div>
+                </div>
+
+                <fieldset id="datosActivity">
+                    <legend>🚴 ACTIVIDADES 🤸🏻</legend>
+                    <p>Por favor, indicá cuáles actividades te interesan.</p>
+                    <p>Sede Palermo:</p>
+                    <div class="flex-container-check">
+                        <input type="checkbox" id="idBasquet" name="idBasquet" value="idBasquet">
+                        <label class="m-l5 m-r5" for="idBasquet"> Básquet</label>
+                        <input type="checkbox" id="idBoxeoP" name="idBoxeoP" value="idBoxeoP">
+                        <label class="m-l5 m-r5" for="idBoxeoP"> Boxeo</label>
+                        <input type="checkbox" id="idFutbolP" name="idFutbolP" value="idFutbolP">
+                        <label class="m-l5 m-r5" for="idFutbolP"> Fútbol</label>
+                        <input type="checkbox" id="idTenisP" name="idTenisP" value="idTenisP">
+                        <label class="m-l5 m-r5" for="idTenisP"> Tenis</label>
+                    </div>
+                    <p>Sede Rosario:</p>
+                    <div class="flex-container-check">
+                        <input type="checkbox" id="idBasquetR" name="idBasquetR" value="idBasquetR">
+                        <label class="m-l5 m-r5" for="idBasquetR"> Básquet</label>
+                        <input type="checkbox" id="idFutbolR" name="idFutbolR" value="idFutbolR">
+                        <label class="m-l5 m-r5" for="idFutbolR"> Fútbol</label>               
+                        <input type="checkbox" id="idRugby" name="idRugby" value="idRugby">
+                        <label class="m-l5 m-r5" for="idRugby"> Rugby</label>                
+                        <input type="checkbox" id="idVoley" name="idVoley" value="idVoley">
+                        <label class="m-l5 m-r5" for="idVoley"> Voley</label>
+                    </div>
+                </fieldset>
+            </div>
+            <div class="condiciones" id="datosCondition">
+                <input type="checkbox" id="idAC" name="idAC" value="idAC" required >
+                <label class="m-l5 m-r5" for="idAC"> Acepto las condiciones*</label><br>
+                <input type="checkbox" checked id="idRN" name="idRN" value="idRN">
+                <label class="m-l5 m-r5" for="idRN"> Deseo recibir novedades</label>       
+                <p>
+                    *:campo obligatorio.
+                </p>        
+            </div>
+            
+            <div class="botonera">
+                <button id="btnAfiliar" type="submit">Iniciar afiliación</button>
+                <button id="btnRestablecer" type="button">Restablecer</button>
+            </div>       
+        </form>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
